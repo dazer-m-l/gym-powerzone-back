@@ -18,7 +18,7 @@ const sequelize = require('../config/db');
   }
 })();
 
-// Rutas
+
 app.use('/clases', require('../routes/clasesRoutes'));
 app.use('/entrenadores', require('../routes/coatchRoutes'));
 app.use('/horarios', require('../routes/scheludesRoutes'));
