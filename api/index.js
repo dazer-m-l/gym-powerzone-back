@@ -19,19 +19,19 @@ const sequelize = require('../config/db');
 })();
 
 // Rutas
-app.use('/api/clases', require('../routes/clasesRoutes'));
-app.use('/api/entrenadores', require('../routes/coatchRoutes'));
-app.use('/api/horarios', require('../routes/scheludesRoutes'));
-app.use('/api/leads', require('../routes/leandsRoutes'));
-app.use('/api/membresias', require('../routes/memberRoutes'));
-app.use('/api/clase_entrenador', require('../routes/serviceRoutes'));
-app.use('/api/auth', require('../routes/authRoutes'));
-app.use('/api/usuarios', require('../routes/usuarioRoutes'));
-app.use('/api/categorias', require('../routes/categoriaRoutes'));
-app.use('/api/productos', require('../routes/productoRoutes'));
-app.use('/api/carritos', require('../routes/carritoRoutes'));
-app.use('/api/pedidos', require('../routes/pedidoRoutes'));
-app.use('/api/items-pedido', require('../routes/itemPedidoRoutes'));
+app.use('/clases', require('../routes/clasesRoutes'));
+app.use('/entrenadores', require('../routes/coatchRoutes'));
+app.use('/horarios', require('../routes/scheludesRoutes'));
+app.use('/leads', require('../routes/leandsRoutes'));
+app.use('/membresias', require('../routes/memberRoutes'));
+app.use('/clase_entrenador', require('../routes/serviceRoutes'));
+app.use('/auth', require('../routes/authRoutes'));
+app.use('/usuarios', require('../routes/usuarioRoutes'));
+app.use('/categorias', require('../routes/categoriaRoutes'));
+app.use('/productos', require('../routes/productoRoutes'));
+app.use('/carritos', require('../routes/carritoRoutes'));
+app.use('/pedidos', require('../routes/pedidoRoutes'));
+app.use('/items-pedido', require('../routes/itemPedidoRoutes'));
 
 app.get('/', (req, res) => {
   res.send('Backend GYM PowerZone funcionando en Vercel');
