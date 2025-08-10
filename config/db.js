@@ -1,4 +1,4 @@
-const sequelize = new Sequelize(
+const sequelize = new sequelize(
   process.env.MYSQLDATABASE || process.env.DB_NAME,
   process.env.MYSQLUSER || process.env.DB_USER,
   process.env.MYSQLPASSWORD || process.env.DB_PASSWORD,
