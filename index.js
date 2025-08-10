@@ -8,6 +8,14 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
+//logs de env 
+console.log('Variables de entorno actuales:');
+console.log('DB_NAME:', process.env.DB_NAME);
+console.log('DB_USER:', process.env.DB_USER);
+console.log('DB_PASSWORD:', process.env.DB_PASSWORD ? '********' : null);
+console.log('DB_HOST:', process.env.DB_HOST);
+console.log('DB_PORT:', process.env.DB_PORT);
+
 const sequelize = require('./config/db');
 (async () => {
   try {
