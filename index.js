@@ -40,6 +40,7 @@ app.use('/api/productos', require('./routes/productoRoutes'));
 app.use('/api/carritos', require('./routes/carritoRoutes'));
 app.use('/api/pedidos', require('./routes/pedidoRoutes'));
 app.use('/api/items-pedido', require('./routes/itemPedidoRoutes'));
+app.use('/api/items-carrito', require('./routes/itemCarritoRoutes'));
 
 app.get('/', (req, res) => {
   res.send('Backend GYM PowerZone funcionando en Railway');
