@@ -111,7 +111,7 @@ const solicitarRecuperacion = async (req, res) => {
         const mailOptions = {
             subject: 'Recuperación de Contraseña',
             text: `Para restablecer tu contraseña, haz clic en este enlace:\n\n` +
-                  `${process.env.FRONTEND_URL}/${token}\n\n` +
+                  `${process.env.FRONTEND_URL}/ResetPasswordScreen/${token}\n\n` +
                   `El enlace expirará en una hora.`
         };
 
